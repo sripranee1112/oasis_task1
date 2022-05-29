@@ -1,0 +1,147 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;300;400;500,600");
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@900&display=swap");
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: url(bg.jpg)no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-weight: 650;
+	color: #fff
+	font-size: 20px;
+	font-family: "Gill Sans", sans-serif;
+	overflow: hidden;
+}
+
+/* Navbar styling */
+.navbar{
+	display: grid;
+	grid-template-columns: repeat(5, 400px 1fr 1fr 1fr 1fr);
+	margin-top: 35px;
+	grid-gap: 18px;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color:violet;
+	text-transform: uppercase;
+}
+
+li:nth-child(1){
+	margin-right: 120px;
+}
+
+li:nth-child(2){
+	margin-left: 320px;
+}
+
+.nav-link{
+	text-align: center;
+	padding: 10px 30px;
+	padding-top: 5px;
+	border-radius: 50px;
+}
+
+.nav-link:not(:first-of-type){
+	background-color: cornsilk;
+	transition: transform .3s;
+}
+
+.nav-link:not(:first-of-type):hover{
+	background-color: silver;
+	cursor: pointer;
+	transform: translateY(5px);
+}
+
+/* navbar styling ends */
+
+/* hero section styling */
+
+.hero-section{
+	display: grid;
+	grid-template-columns: repeat(2,700px 1fr);
+	align-items: center;
+	color: darkmagenta;
+	font-family: Trebuchet MS, sans-serif;
+}
+
+.hero-section-content{
+	margin-left: 60px;
+	margin-bottom: 100px;
+}
+
+.hero-section-content h3{
+	margin-top: -35px;
+	color: cornsilk;
+}
+
+.hero-section-content hr{
+	width: 750px;
+	margin-left: 0px;
+	margin-top: -10px;
+}
+
+.hero-section-content .btn{
+	border: none;
+	outline: none;
+	padding: 15px 45px;
+	background: transparent;
+	border-radius: 50px;
+	font-size: 20px;
+	color: crimson;
+	cursor: pointer;
+	transition: transform .3s;
+}
+
+.hero-section-content .btn:hover{
+	transform: translateY(5px);
+}
+
+.hero-section-content .btn1{
+	background: cornsilk;
+}
+
+.hero-section-content .btn1:hover{
+	background-color: silver;
+}
+
+.hero-section-content .btn2{
+	border: 2px solid cornsilk;
+	margin-left: 10px;
+	color: crimson;
+}
+
+.hero-section-content .btn2:hover{
+	background: silver;
+	color: #fff;
+}
+
+/* social media icons styling */
+.social-media{
+	transform: translateY(80px) translateX(30px);
+}
+
+.social-media i{
+	font-size: 35px;
+	border: 2px solid cornsilk;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+	transition: all .3s;
+	border-radius: 50%;
+}
+
+.social-media i:hover{
+	background: silver;
+	color: #4437e2;
+	transform: translateY(5px);
+}
